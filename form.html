@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'> <!-- This Is meta response to page language -->
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Form</title>
+    <meta name="description" content="This Is Our Book Store">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color:burlywood; /* Cyan footer background */
+            color: #ffffff; /* White text */
+            text-align: center;
+            position: fixed;
+            bottom:0;
+            width: 100%;
+            padding: 20px;
+        }
+        header {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+    </style>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!-- <header>
+        <h3>This Is A Form</h3>
+    </header> -->
+
+    <form action="registration_process.php" method="post">
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <footer>
+        <p>By Mahmoud Khalil</p>
+        <a href="mailto:mahmoud.jaja.97@gmail.com" target="_blank"><img src="https://imaginethatcreative.net/blog/wp-content/uploads/2023/06/2250206.png" alt="E-Mail" height="30px" width="30px"></a>
+        <a href="https://www.facebook.com/profile.php?id=100005882106234&sk=about" target="_blank"><img class="img1" src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="Facebook" height="30px" width="30px"></a>
+        <a href="https://www.youtube.com/channel/UC-NTLgH-Ao-82cqVeWiA5Qw" target="_blank"><img class="img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/YouTube_social_white_squircle.svg/768px-YouTube_social_white_squircle.svg.png" alt="Youtube" height="30px" width="30px"></a>
+        <a href="https://www.instagram.com/mahmoud_khalilj/" target="_blank"> <img class="img1" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" height="30px" width="30px"></a>
+
+    </footer>
+</body>
+</html>
